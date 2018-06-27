@@ -34,7 +34,7 @@ class Song
 
   def self.genre_count
     count = {}
-    self.genres.each do |uniqe_genre|
+    @@genres.each do |uniqe_genre|
       count[uniqe_genre] = @@genres.select { |genre| genre == uniqe_genre }.length
     end
     count
@@ -50,17 +50,17 @@ class Song
 
 end
 
-alone = Song.new("Alone", "Daniel Rein", "rock")
-
-eulalie = Song.new("Eulalie", "Yoav Shemesh", "Arabic")
-
-annabel_lee = Song.new("Annabel Lee", "Daniel Rein", "Arabic")
-
-the_bells = Song.new("The Bells", "Yoav Shemesh", "musical")
-
-a_dream_within_a_dream = Song.new("A Dream Within A Dream", "Daniel Rein", "rock")
-
-the_bridal_ballad = Song.new("The Bridal Ballad", "Daniel Rein", "rock")
+# alone = Song.new("Alone", "Daniel Rein", "rock")
+#
+# eulalie = Song.new("Eulalie", "Yoav Shemesh", "Arabic")
+#
+# annabel_lee = Song.new("Annabel Lee", "Daniel Rein", "Arabic")
+#
+# the_bells = Song.new("The Bells", "Yoav Shemesh", "musical")
+#
+# a_dream_within_a_dream = Song.new("A Dream Within A Dream", "Daniel Rein", "rock")
+#
+# the_bridal_ballad = Song.new("The Bridal Ballad", "Daniel Rein", "rock")
 
 # binding.pry
-Song.genre_count
+# Song.genre_count
